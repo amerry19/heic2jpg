@@ -1,0 +1,5 @@
+cffi==1.15.1
+Pillow==9.5.0
+pycparser==2.21
+pyheif==0.7.1
+watchdog==3.0.0
