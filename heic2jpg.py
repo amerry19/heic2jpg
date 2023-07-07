@@ -14,7 +14,7 @@ class FileHandler(PatternMatchingEventHandler):
         print(f"{event.src_path} has been {event.event_type}")
         if event.event_type == 'created' or event.event_type == 'modified':
             # If a .heic file has been created or modified, convert it to .jpg
-            if event.src_path.endswith(".heic"):
+            if event.src_path.lower().endswith(".heic"):
                 print(f"Converting {event.src_path} to jpg...")
                 subprocess.run(['magick', 'convert', event.src_path, f'{os.path.splitext(event.src_path)[0]}.jpg'])
                 print(f"Conversion finished for {event.src_path}")

@@ -3,3 +3,15 @@ Python library that watches filesystem and automatically converts HEIC images as
 
 ## Dependencies
 ImageMagick: ```brew install imagemagick```
+
+## How to run
+From the project root: ``` python3 heic2jpg.py ~/ ``
+
+## TODO:
+
+* Add CLI args
+  * Persist options
+* Args
+  * Preferred dir to watch
+  * Auto-trash incoming HEIC images once conversion is complete
+* Run in background and not in shell
