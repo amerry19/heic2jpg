@@ -5,7 +5,7 @@ Python library that watches filesystem and automatically converts HEIC images as
 ImageMagick: ```brew install imagemagick```
 
 ## How to run
-From the project root: ``` python3 heic2jpg.py ~/ ```
+From the project root: ```python3 heic2jpg.py```
 
 ## Command-line Arguments
 
