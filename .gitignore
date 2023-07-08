@@ -1,3 +1,5 @@
 # .gitignore
 .DS_Store
 .vscode
+heic2jpg.ini
+heic2jpg.log
