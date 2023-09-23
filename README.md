@@ -13,6 +13,7 @@ heic2jpg supports the following command-line arguments:
 
 - `-dir`: Specifies the directory to watch for changes. By default, the script watches the user's home directory.
 - `-autodelete`: Enables automatic deletion (moves to trash [OS agnostic]) of HEIC files after successful conversion. By default, auto-deletion is disabled.
+- `-i / --immediate`: Triggers conversion of any existing HEIC files in the specified directory. By default, this is disabled.
 - `-reset`: Resets the configuration to default settings, using the user's home directory and disabling auto-deletion.
 
 To use these command-line arguments, run the script with the desired options. Here are some examples:
@@ -20,6 +21,9 @@ To use these command-line arguments, run the script with the desired options. He
 ```bash
 # Watch a specific directory and enable auto-deletion
 python3 heic2jpg.py -dir /path/to/directory -autodelete
+
+# Convert existing files and then watch the directory
+python3 heic2jpg.py -i -dir /path/to/directory
 
 # Reset the configuration to default settings
 python3 heic2jpg.py -reset
